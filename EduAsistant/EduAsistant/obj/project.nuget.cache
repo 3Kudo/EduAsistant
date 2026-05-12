@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MfMS/7MrKas=",
+  "dgSpecHash": "OM57CbvjtDk=",
   "success": true,
   "projectFilePath": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\EduAsistant.csproj",
   "expectedPackageFiles": [
@@ -131,6 +131,7 @@
     "C:\\Users\\kadom\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\kadom\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\kadom\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
+    "C:\\Users\\kadom\\.nuget\\packages\\pdfpig\\0.1.14\\pdfpig.0.1.14.nupkg.sha512",
     "C:\\Users\\kadom\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\kadom\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\kadom\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",

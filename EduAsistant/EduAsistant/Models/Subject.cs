@@ -8,5 +8,6 @@
         public string StudentId { get; set; } = string.Empty;
         public Student Student { get; set; } = null!;
         public List<Syllabus> Syllabuses { get; set; } = new();
+        public string? SyllabusFileName { get; set; }
     }
 }
