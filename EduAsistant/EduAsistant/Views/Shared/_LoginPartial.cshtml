@@ -3,25 +3,41 @@
 @inject SignInManager<Student> SignInManager
 @inject UserManager<Student> UserManager
 
-<ul class="navbar-nav">
-    @if (SignInManager.IsSignedIn(User))
-    {
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="dropdown ms-auto">
+        <a href="#" class="d-flex align-items-center gap-3 text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="fw-bold text-muted">@User.Identity?.Name?.Split('@')[0]</span>
+            <div class="fs-4 bg-light rounded-circle text-center" style="width: 40px; height: 40px; line-height: 40px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">👩‍🦰</div>
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm mt-2" aria-labelledby="userDropdown" style="border-radius: 15px; min-width: 200px;">
+            <li>
+                <a class="dropdown-item fw-semibold text-muted py-2" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                    ⚙️ Profile Settings
+                </a>
+            </li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post">
+                    <button type="submit" class="dropdown-item fw-semibold text-danger py-2 border-0 bg-transparent w-100 text-start">
+                        🚪 Logout
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
+}
+else
+{
+    <ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Witaj @User.Identity?.Name!</a>
+            <a class="nav-link fw-bold text-muted" asp-area="Identity" asp-page="/Account/Login">Log In</a>
         </li>
         <li class="nav-item">
-            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                <button type="submit" class="nav-link btn btn-link text-dark">Wyloguj</button>
-            </form>
+            <a class="btn text-white fw-bold px-4" style="background-color: #8B5CF6; border-radius: 15px; box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3);" asp-area="Identity" asp-page="/Account/Register">
+                Sign Up
+            </a>
         </li>
-    }
-    else
-    {
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Zarejestruj</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Zaloguj</a>
-        </li>
-    }
-</ul>
+    </ul>
+}
