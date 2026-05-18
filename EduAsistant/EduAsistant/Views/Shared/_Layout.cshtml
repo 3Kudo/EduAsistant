@@ -10,23 +10,50 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">EduAsistant</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-sm custom-navbar">
+            <div class="container">
+                <a class="navbar-brand fw-bolder fs-4" asp-area="" asp-controller="Home" asp-action="Index">
+                    <span style="color: var(--f-purple);">Edu</span>Asistant
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center">
+                    <ul class="navbar-nav flex-grow-1 ms-4">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link nav-icon active" asp-controller="Home" asp-action="Index">🏠 Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link nav-icon" href="#">📅 Schedule</a>
                         </li>
-                        <partial name="_LoginPartial" />
                     </ul>
+                    <!-- Zamiast LoginPartial zróbmy proste powitanie z wylogowaniem w stylu aplikacji -->
+                    <!-- Prawy panel użytkownika z rozwijanym menu (Dropdown) -->
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center gap-3 text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fw-bold text-muted">@User.Identity?.Name?.Split('@')[0]</span>
+                            <div class="fs-4 bg-light rounded-circle text-center" style="width: 40px; height: 40px; line-height: 40px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">👩‍🦰</div>
+                        </a>
+
+                        <!-- Menu rozwijane w stylu aplikacji -->
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm mt-2" aria-labelledby="userDropdown" style="border-radius: 15px; min-width: 200px;">
+                            <li>
+                                <!-- Link do profilu Identity -->
+                                <a class="dropdown-item fw-semibold text-muted py-2" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                                    ⚙️ Profile Settings
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <!-- Formularz wylogowania Identity -->
+                                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                    <button type="submit" class="dropdown-item fw-semibold text-danger py-2">
+                                        🚪 Logout
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -37,11 +64,6 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - EduAsistant - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

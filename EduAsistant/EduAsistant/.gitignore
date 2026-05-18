@@ -8,3 +8,7 @@
 *.mdf
 *.ldf
 .DS_Store
+*.cache
+*.cache.json
+DocumentLayout.json
+appsettings.Development.json

@@ -18,6 +18,9 @@ builder.Services.AddDefaultIdentity<Student>(options => options.SignIn.RequireCo
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<EduAsistant.Services.PdfReaderService>();
+builder.Services.AddHttpClient<EduAsistant.Services.AiAnalyzerService>();
+builder.Services.AddScoped<EduAsistant.Services.StudyPlannerService>();
 
 var app = builder.Build();
 

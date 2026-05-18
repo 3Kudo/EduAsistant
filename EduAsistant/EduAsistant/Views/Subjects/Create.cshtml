@@ -1,42 +1,80 @@
 ﻿@model EduAsistant.Models.Subject
-
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "New course";
 }
 
-<h1>Create</h1>
-
-<h4>Subject</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ExamDate" class="control-label"></label>
-                <input asp-for="ExamDate" class="form-control" />
-                <span asp-validation-for="ExamDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StudentId" class="control-label"></label>
-                <select asp-for="StudentId" class ="form-control" asp-items="ViewBag.StudentId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="form-container">
+    <!-- Nagłówek -->
+    <div class="d-flex align-items-center mb-5">
+        <a asp-controller="Home" asp-action="Index" class="text-dark text-decoration-none fs-4 me-3">&lt;</a>
+        <h3 class="fw-bolder mb-0">New course</h3>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <form asp-action="Create" enctype="multipart/form-data" method="post">
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        <div class="upload-zone text-center p-5 mb-4" onclick="document.getElementById('syllabusFile').click()">
+            <input type="file" name="syllabusFile" id="syllabusFile" accept=".pdf" class="d-none" required onchange="document.getElementById('fileName').innerText = this.files[0].name" />
+            <div style="font-size: 3rem;">☁️</div>
+            <h5 class="fw-bold mt-3 mb-1">Drop your PDF or Scan notes 📸</h5>
+            <small class="text-muted" id="fileName">Tap to browse files</small>
+        </div>
+
+        <div class="mb-4">
+            <label class="custom-label">COURSE NAME</label>
+            <input asp-for="Name" class="form-control custom-input" placeholder="ex : Marketing" required />
+        </div>
+
+        <div class="mb-4">
+            <div class="mb-4">
+                <label class="custom-label">COLOR</label>
+                <div class="d-flex gap-3">
+                    <!-- Zmieniliśmy asp-for="Color" na name="Color" -->
+                    <input type="radio" name="Color" value="#8B5CF6" class="btn-check" id="c1" checked>
+                    <label class="color-radio" style="background:#8B5CF6;" for="c1"></label>
+
+                    <input type="radio" name="Color" value="#F97316" class="btn-check" id="c2">
+                    <label class="color-radio" style="background:#F97316;" for="c2"></label>
+
+                    <input type="radio" name="Color" value="#10B981" class="btn-check" id="c3">
+                    <label class="color-radio" style="background:#10B981;" for="c3"></label>
+
+                    <input type="radio" name="Color" value="#06B6D4" class="btn-check" id="c4">
+                    <label class="color-radio" style="background:#06B6D4;" for="c4"></label>
+
+                    <input type="radio" name="Color" value="#EC4899" class="btn-check" id="c5">
+                    <label class="color-radio" style="background:#EC4899;" for="c5"></label>
+
+                    <input type="radio" name="Color" value="#EAB308" class="btn-check" id="c6">
+                    <label class="color-radio" style="background:#EAB308;" for="c6"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <label class="custom-label">EXAM DATE</label>
+                <input asp-for="ExamDate" type="date" class="form-control custom-input" required />
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <label class="custom-label">DAILY STUDY LIMIT (H/DAY)</label>
+                <input asp-for="DailyStudyLimit" type="number" step="0.5" class="form-control custom-input" value="2.0" />
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <label class="custom-label">PRIORITY</label>
+            <div class="priority-group d-flex w-100">
+                <input type="radio" asp-for="Priority" value="Low" class="btn-check" id="p1">
+                <label class="btn priority-btn low flex-fill" for="p1">Low</label>
+
+                <input type="radio" asp-for="Priority" value="Medium" class="btn-check" id="p2" checked>
+                <label class="btn priority-btn med flex-fill mx-1" for="p2">Medium</label>
+
+                <input type="radio" asp-for="Priority" value="Hard" class="btn-check" id="p3">
+                <label class="btn priority-btn hard flex-fill" for="p3">Hard</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-purple w-100 fs-5 py-3">GENERATE MY SMART SCHEDULE ✨</button>
+    </form>
+</div>
