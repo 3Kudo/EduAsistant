@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EduAsistant")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c51ced2b81b4c199bd49a53cd8edabe10ffa15e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d8fbebd183cd7859c79e631a85364c127aae117")]
 [assembly: System.Reflection.AssemblyProductAttribute("EduAsistant")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EduAsistant")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
