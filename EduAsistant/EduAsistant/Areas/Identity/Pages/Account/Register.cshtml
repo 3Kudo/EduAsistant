@@ -1,0 +1,58 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    header {
+        display: none !important;
+    }
+</style>
+
+<div class="container mt-5" style="max-width: 500px;">
+
+    <div class="bg-white rounded-4 p-5 shadow-sm border border-light">
+
+        <div class="text-center mb-4">
+            <h2 class="fw-bolder mb-2 text-dark">Create Account ✨</h2>
+            <p class="text-muted small">Join us to organize your study time</p>
+        </div>
+
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger small mb-3" role="alert"></div>
+
+            <div class="mb-3">
+                <label class="custom-label" asp-for="Input.Email">EMAIL ADDRESS</label>
+                <input asp-for="Input.Email" class="form-control custom-input" autocomplete="username" aria-required="true" placeholder="ex : kacper@edu.pl" />
+                <span asp-validation-for="Input.Email" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="custom-label" asp-for="Input.Password">PASSWORD</label>
+                <input asp-for="Input.Password" class="form-control custom-input" autocomplete="new-password" aria-required="true" placeholder="••••••••" />
+                <span asp-validation-for="Input.Password" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-4">
+                <label class="custom-label" asp-for="Input.ConfirmPassword">CONFIRM PASSWORD</label>
+                <input asp-for="Input.ConfirmPassword" class="form-control custom-input" autocomplete="new-password" aria-required="true" placeholder="••••••••" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger small"></span>
+            </div>
+
+            <button id="registerSubmit" type="submit" class="btn btn-purple w-100 fs-6 py-3">Create My Account</button>
+        </form>
+
+        <div class="text-center mt-4 text-muted small fw-semibold">
+            Already have an account?
+            <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" class="text-decoration-none" style="color: #8B5CF6;">
+                Log In
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
