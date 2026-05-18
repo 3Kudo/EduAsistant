@@ -48,11 +48,11 @@ namespace EduAsistant.Controllers
         {
             if (id == null) return NotFound();
 
-            var userId = _userManager.GetUserId(User);
-
+            // Używamy Include i ThenInclude, aby wyciągnąć całe "drzewo" danych z bazy
             var subject = await _context.Subjects
-                .Include(s => s.Student)
-                .FirstOrDefaultAsync(m => m.Id == id && m.StudentId == userId);
+                .Include(s => s.Syllabuses)
+                    .ThenInclude(sy => sy.Topics)
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             if (subject == null) return NotFound();
 
@@ -210,22 +210,42 @@ namespace EduAsistant.Controllers
         }
 
         // POST: Subjects/Delete/5
+        // POST: Subjects/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var userId = _userManager.GetUserId(User);
-            var subject = await _context.Subjects.FirstOrDefaultAsync(s => s.Id == id && s.StudentId == userId);
+            if (_context.Subjects == null)
+            {
+                return Problem("Entity set 'AppDbContext.Subjects'  is null.");
+            }
+
+            // 1. Zamiast pobierać sam kurs, pobieramy całe "drzewo" zależności (Sylabusy -> Tematy -> Sesje)
+            var subject = await _context.Subjects
+                .Include(s => s.Syllabuses)
+                    .ThenInclude(sy => sy.Topics)
+                        .ThenInclude(t => t.StudySessions)
+                .FirstOrDefaultAsync(m => m.Id == id);
 
             if (subject != null)
             {
-                if (!string.IsNullOrEmpty(subject.SyllabusFileName))
+                // 2. Ręcznie sprzątamy wszystko od najniższego szczebla (żeby SQL Server nie zgłaszał błędów)
+                foreach (var syllabus in subject.Syllabuses)
                 {
-                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", subject.SyllabusFileName);
-                    if (System.IO.File.Exists(filePath)) System.IO.File.Delete(filePath);
+                    foreach (var topic in syllabus.Topics)
+                    {
+                        // Usuwamy sesje nauki przypisane do tematu
+                        _context.StudySessions.RemoveRange(topic.StudySessions);
+                    }
+                    // Usuwamy tematy przypisane do sylabusa
+                    _context.Topics.RemoveRange(syllabus.Topics);
                 }
+                // Usuwamy sylabusy
+                _context.Syllabuses.RemoveRange(subject.Syllabuses);
 
+                // Na samym końcu bezpiecznie usuwamy pusty kurs
                 _context.Subjects.Remove(subject);
+
                 await _context.SaveChangesAsync();
             }
 
