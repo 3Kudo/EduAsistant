@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\EduAsistant.csproj": {}
+    "C:\\programowanie\\BIP\\EduAsistant\\EduAsistant\\EduAsistant.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\EduAsistant.csproj": {
+    "C:\\programowanie\\BIP\\EduAsistant\\EduAsistant\\EduAsistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\EduAsistant.csproj",
+        "projectUniqueName": "C:\\programowanie\\BIP\\EduAsistant\\EduAsistant\\EduAsistant.csproj",
         "projectName": "EduAsistant",
-        "projectPath": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\EduAsistant.csproj",
-        "packagesPath": "C:\\Users\\kadom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\obj\\",
+        "projectPath": "C:\\programowanie\\BIP\\EduAsistant\\EduAsistant\\EduAsistant.csproj",
+        "packagesPath": "C:\\Users\\kudo\\.nuget\\packages\\",
+        "outputPath": "C:\\programowanie\\BIP\\EduAsistant\\EduAsistant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kadom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,7 +57,7 @@
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.23, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -96,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
