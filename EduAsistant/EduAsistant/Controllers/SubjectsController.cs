@@ -257,7 +257,33 @@ namespace EduAsistant.Controllers
             var userId = _userManager.GetUserId(User);
             return _context.Subjects.Any(e => e.Id == id && e.StudentId == userId);
         }
+
+        // POST: Subjects/ToggleTopicStatus
+        [HttpPost]
+        public async Task<IActionResult> ToggleTopicStatus(int topicId)
+        {
+            // Szukamy konkretnego tematu w bazie
+            var topic = await _context.Topics.FindAsync(topicId);
+
+            if (topic == null)
+            {
+                return Json(new { success = false, message = "Nie znaleziono tematu." });
+            }
+
+            // Odwracamy status (jak było false to robi się true i na odwrót)
+            topic.IsCompleted = !topic.IsCompleted;
+
+            // Zapisujemy zmiany w bazie
+            await _context.SaveChangesAsync();
+
+            // Zwracamy odpowiedź w formacie JSON do naszego skryptu na froncie
+            return Json(new { success = true, isCompleted = topic.IsCompleted });
+        }
+
+
     }
+
+
 
     // Klasa pomocnicza do odczytywania odpowiedzi z AI
     public class AiTopicResult

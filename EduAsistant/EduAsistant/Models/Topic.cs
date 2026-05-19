@@ -8,5 +8,6 @@
         public int SyllabusId { get; set; }
         public Syllabus Syllabus { get; set; } = null!;
         public List<StudySession> StudySessions { get; set; } = new();
+        public bool IsCompleted { get; set; } = false;
     }
 }

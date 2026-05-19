@@ -3,6 +3,86 @@
   "WorkspaceRootPath": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\subjects\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\subjects\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Migrations\\20260519094455_AddTopicIsCompleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EduAsistant\\Migrations\\20260519094455_AddTopicIsCompleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\studysession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\studysession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\syllabus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\syllabus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\blockoutdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\blockoutdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,48 +91,12 @@
       "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\subjects\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\subjects\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\subjects\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\subjects\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\topic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\subjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\subjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\services\\studyplannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,10 +125,6 @@
       "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\migrations\\20260429145128_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\migrations\\20260429145128_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -94,26 +134,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kadom\\AppData\\Roaming\\Microsoft\\UserSecrets\\60cecd93-c12f-48d6-8a14-e57a0ed51151\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\studysession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\studysession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\syllabus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\syllabus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\models\\blockoutdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|solutionrelative:eduasistant\\models\\blockoutdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24D3B443-DBB4-459E-BBA3-802AC5D0B173}|EduAsistant\\EduAsistant.csproj|c:\\users\\kadom\\desktop\\git\\eduasistant\\eduasistant\\eduasistant\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -150,24 +170,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "EduAsistant\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Areas\\Identity\\Pages\\Account\\Login.cshtml*",
-              "RelativeToolTip": "EduAsistant\\Areas\\Identity\\Pages\\Account\\Login.cshtml*",
-              "ViewState": "AgIAADAAAAAAAAAAAAAUwDsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-18T13:59:58.067Z",
+              "DocumentIndex": 5,
+              "Title": "20260519094455_AddTopicIsCompleted.cs",
+              "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Migrations\\20260519094455_AddTopicIsCompleted.cs",
+              "RelativeDocumentMoniker": "EduAsistant\\Migrations\\20260519094455_AddTopicIsCompleted.cs",
+              "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Migrations\\20260519094455_AddTopicIsCompleted.cs",
+              "RelativeToolTip": "EduAsistant\\Migrations\\20260519094455_AddTopicIsCompleted.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T09:44:55.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "EduAsistant\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "EduAsistant\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-18T14:53:24.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Schedule\\Index.cshtml",
+              "RelativeDocumentMoniker": "EduAsistant\\Views\\Schedule\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Schedule\\Index.cshtml",
+              "RelativeToolTip": "EduAsistant\\Views\\Schedule\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-18T14:38:35.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ScheduleController.cs",
+              "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Controllers\\ScheduleController.cs",
+              "RelativeDocumentMoniker": "EduAsistant\\Controllers\\ScheduleController.cs",
+              "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Controllers\\ScheduleController.cs",
+              "RelativeToolTip": "EduAsistant\\Controllers\\ScheduleController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T14:33:38.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "EduAsistant\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "EduAsistant\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-18T14:03:22.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "EduAsistant\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "EduAsistant\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-18T13:59:58.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "EduAsistant\\ScaffoldingReadMe.txt",
@@ -175,12 +256,11 @@
               "RelativeToolTip": "EduAsistant\\ScaffoldingReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-05-18T13:59:35.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T13:59:35.692Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Controllers\\HomeController.cs",
@@ -192,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Subjects\\Index.cshtml",
               "RelativeDocumentMoniker": "EduAsistant\\Views\\Subjects\\Index.cshtml",
@@ -204,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "20260513164121_AddFigmaFieldsToSubject.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Migrations\\20260513164121_AddFigmaFieldsToSubject.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Migrations\\20260513164121_AddFigmaFieldsToSubject.cs",
@@ -216,19 +296,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "EduAsistant\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\wwwroot\\css\\site.css",
               "RelativeToolTip": "EduAsistant\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAPUAAAAAAAAAAAAAAAQBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAALIBAAAAAAAAAAAAAL4BAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-13T16:39:11.565Z"
+              "WhenOpened": "2026-05-13T16:39:11.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "dbo.StudySessions.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/EduAsistantDb/True/SqlTable/dbo.StudySessions.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/EduAsistantDb/True/SqlTable/dbo.StudySessions.sql",
@@ -237,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "dbo.Topics.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/EduAsistantDb/True/SqlTable/dbo.Topics.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/EduAsistantDb/True/SqlTable/dbo.Topics.sql",
@@ -246,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\.gitignore",
               "RelativeDocumentMoniker": "EduAsistant\\.gitignore",
@@ -258,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\appsettings.Development.json",
               "RelativeDocumentMoniker": "EduAsistant\\appsettings.Development.json",
@@ -270,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\kadom\\AppData\\Roaming\\Microsoft\\UserSecrets\\60cecd93-c12f-48d6-8a14-e57a0ed51151\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\60cecd93-c12f-48d6-8a14-e57a0ed51151\\secrets.json",
@@ -282,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "StudyPlannerService.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Services\\StudyPlannerService.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Services\\StudyPlannerService.cs",
@@ -294,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "AiAnalyzerService.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Services\\AiAnalyzerService.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Services\\AiAnalyzerService.cs",
@@ -306,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "PdfReaderService.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Services\\PdfReaderService.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Services\\PdfReaderService.cs",
@@ -318,19 +399,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Subjects\\Details.cshtml",
               "RelativeDocumentMoniker": "EduAsistant\\Views\\Subjects\\Details.cshtml",
               "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Subjects\\Details.cshtml",
               "RelativeToolTip": "EduAsistant\\Views\\Subjects\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAYwGwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-11T07:44:40.049Z"
+              "WhenOpened": "2026-05-11T07:44:40.049Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 22,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Subjects\\Create.cshtml",
               "RelativeDocumentMoniker": "EduAsistant\\Views\\Subjects\\Create.cshtml",
@@ -342,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "20260511072042_SylabbusFileNameSubject.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Migrations\\20260511072042_SylabbusFileNameSubject.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Migrations\\20260511072042_SylabbusFileNameSubject.cs",
@@ -354,19 +436,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "EduAsistant\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "EduAsistant\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEQAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "EduAsistant\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-10T17:33:20.943Z"
+              "WhenOpened": "2026-05-10T17:33:20.943Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 11,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Models\\ErrorViewModel.cs",
@@ -374,11 +457,12 @@
               "RelativeToolTip": "EduAsistant\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T17:25:49.671Z"
+              "WhenOpened": "2026-05-10T17:25:49.671Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\.gitignore",
               "RelativeDocumentMoniker": "EduAsistant\\.gitignore",
@@ -390,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "dbo.AspNetUsers.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/EduAsistantDb/True/SqlTable/dbo.AspNetUsers.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/EduAsistantDb/True/SqlTable/dbo.AspNetUsers.sql",
@@ -399,19 +483,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "EduAsistant\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "EduAsistant\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACAAAAAAAAAAAAAYwDcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAACcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-29T15:16:37.745Z"
+              "WhenOpened": "2026-04-29T15:16:37.745Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "EduAsistant\\Views\\_ViewImports.cshtml",
@@ -423,32 +508,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "EduAsistant\\Views\\Shared\\_LoginPartial.cshtml",
               "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeToolTip": "EduAsistant\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-29T15:15:47.542Z"
+              "WhenOpened": "2026-04-29T15:15:47.542Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SubjectsController.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Controllers\\SubjectsController.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Controllers\\SubjectsController.cs",
               "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Controllers\\SubjectsController.cs",
               "RelativeToolTip": "EduAsistant\\Controllers\\SubjectsController.cs",
-              "ViewState": "AgIAANEAAAAAAAAAAAAIwPwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAuwBwBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-29T15:01:27.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "20260429145128_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Migrations\\20260429145128_InitialCreate.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Migrations\\20260429145128_InitialCreate.cs",
@@ -460,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\appsettings.json",
               "RelativeDocumentMoniker": "EduAsistant\\appsettings.json",
@@ -472,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Data\\AppDbContext.cs",
@@ -484,31 +570,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 7,
               "Title": "StudySession.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\StudySession.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Models\\StudySession.cs",
               "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\StudySession.cs",
               "RelativeToolTip": "EduAsistant\\Models\\StudySession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T14:31:12.62Z"
+              "WhenOpened": "2026-04-29T14:31:12.62Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Topic.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\Topic.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Models\\Topic.cs",
               "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\Topic.cs",
               "RelativeToolTip": "EduAsistant\\Models\\Topic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T14:30:37.013Z"
+              "WhenOpened": "2026-04-29T14:30:37.013Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 9,
               "Title": "Syllabus.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\Syllabus.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Models\\Syllabus.cs",
@@ -516,23 +604,25 @@
               "RelativeToolTip": "EduAsistant\\Models\\Syllabus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T14:29:59.823Z"
+              "WhenOpened": "2026-04-29T14:29:59.823Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "Subject.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\Subject.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Models\\Subject.cs",
               "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\Subject.cs",
               "RelativeToolTip": "EduAsistant\\Models\\Subject.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA0AAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwAkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T14:29:13.317Z"
+              "WhenOpened": "2026-04-29T14:29:13.317Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 12,
               "Title": "BlockOutDate.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\BlockOutDate.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Models\\BlockOutDate.cs",
@@ -540,11 +630,12 @@
               "RelativeToolTip": "EduAsistant\\Models\\BlockOutDate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T14:28:27.39Z"
+              "WhenOpened": "2026-04-29T14:28:27.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 10,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Models\\Student.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Models\\Student.cs",
@@ -552,11 +643,12 @@
               "RelativeToolTip": "EduAsistant\\Models\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T14:25:52.775Z"
+              "WhenOpened": "2026-04-29T14:25:52.775Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "EduAsistant.csproj",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\EduAsistant.csproj",
               "RelativeDocumentMoniker": "EduAsistant\\EduAsistant.csproj",
@@ -568,13 +660,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Program.cs",
               "RelativeDocumentMoniker": "EduAsistant\\Program.cs",
               "ToolTip": "C:\\Users\\kadom\\Desktop\\GIT\\EduAsistant\\EduAsistant\\EduAsistant\\Program.cs",
               "RelativeToolTip": "EduAsistant\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABYAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-29T14:01:22.384Z"
             }

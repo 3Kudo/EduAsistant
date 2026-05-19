@@ -32,9 +32,7 @@
 
     <div class="d-flex flex-column justify-content-center align-items-center text-center w-100" style="min-height: 100vh;">
 
-        <div style="font-size: 5.5rem; font-weight: bold; color: white; line-height: 0.85; font-family: 'Comic Sans MS', cursive, sans-serif; letter-spacing: -2px;">
-            edu<br>assistant
-        </div>
+        <img src="~/images/white.jpg" alt="EduAsistant Logo" class="landing-logo mb-3" />
 
         <hr style="width: 150px; border-top: 3px solid white; opacity: 1; margin: 30px 0 15px 0;">
 
@@ -84,24 +82,36 @@ else
         {
             foreach (var item in Model)
             {
-                int chaptersCount = item.Syllabuses?.SelectMany(s => s.Topics).Count() ?? 0;
+                // Zbieramy wszystkie tematy, liczymy je i wyliczamy postęp
+                var allTopics = item.Syllabuses?.SelectMany(s => s.Topics).ToList() ?? new List<EduAsistant.Models.Topic>();
+                int chaptersCount = allTopics.Count;
+                int completedChapters = allTopics.Count(t => t.IsCompleted);
+                int progressPercentage = chaptersCount > 0 ? (int)Math.Round((double)completedChapters / chaptersCount * 100) : 0;
 
-                <div class="course-card" style="background: #fff; border-radius: 20px; padding: 25px; border-left: 8px solid @item.Color; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                <a asp-controller="Subjects" asp-action="Details" asp-route-id="@item.Id"
+                   class="course-card text-decoration-none d-block"
+                   style="background: #fff; border-radius: 20px; padding: 25px; border-left: 8px solid @item.Color; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+                   onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.08)';"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.03)';">
+
                     <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="fw-bold mb-0">@item.Name</h5>
-                        <span class="exam-badge" style="background-color: #F3F4F6; color: #6B7280; font-size: 0.8rem; padding: 6px 12px; border-radius: 10px; font-weight: 600;">🗓 @item.ExamDate.ToString("MMM dd")</span>
+                        <h5 class="fw-bold mb-0 text-dark">@item.Name</h5>
+                        <span class="exam-badge" style="background-color: #F3F4F6; color: #6B7280; font-size: 0.8rem; padding: 6px 12px; border-radius: 10px; font-weight: 600;">
+                            🗓 @item.ExamDate.ToString("MMM dd", new System.Globalization.CultureInfo("en-US"))
+                        </span>
                     </div>
-                    <div class="text-muted small mt-1">@chaptersCount chapters</div>
+
+                    <div class="text-muted small mt-2 fw-semibold">@completedChapters / @chaptersCount chapters completed</div>
 
                     <div class="progress-bg" style="height: 8px; background: #F3F4F6; border-radius: 4px; margin: 20px 0;">
-                        <div class="progress-fill" style="width: 0%; height: 100%; border-radius: 4px; background-color: @item.Color;"></div>
+                        <div class="progress-fill" style="width: @progressPercentage%; height: 100%; border-radius: 4px; background-color: @item.Color; transition: width 1s ease-out;"></div>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center fw-bold" style="font-size: 0.85rem;">
-                        <span style="color: @item.Color;">0% mastered</span>
-                        <a asp-controller="Subjects" asp-action="Details" asp-route-id="@item.Id" class="text-decoration-none text-dark fs-5">&gt;</a>
+                    <div class="d-flex justify-content-between align-items-center fw-bold" style="font-size: 0.9rem;">
+                        <span style="color: @item.Color;">@progressPercentage% mastered</span>
+                        <span class="text-muted fs-5 fw-bolder" style="opacity: 0.6;">&gt;</span>
                     </div>
-                </div>
+                </a>
             }
         }
         else
