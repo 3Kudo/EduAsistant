@@ -1,10 +1,10 @@
-:root {
+Ôªø:root {
     --f-purple: #8B5CF6;
     --f-orange: #F97316;
     --f-green: #10B981;
     --f-text: #1F2937;
     --f-muted: #6B7280;
-    --f-bg: #F8F9FA; /* Delikatnie szare t≥o strony, by bia≥e kafelki z Figmy siÍ odcina≥y */
+    --f-bg: #F8F9FA;
 }
 
 body {
@@ -12,251 +12,107 @@ body {
     color: var(--f-text);
 }
 
-/* --- Navbar (Naúladuje pasek nawigacji z Figmy) --- */
-.custom-navbar {
-    background: #ffffff;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding: 15px 0;
-    margin-bottom: 40px;
+/* --- LOGO NA EKRANIE POWITALNYM --- */
+.landing-logo {
+    height: 120px !important; /* Rozmiar, kt√≥ry nie rozsadza ekranu */
+    width: auto;
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
-.nav-icon {
-    font-weight: 600;
-    color: #9CA3AF !important;
-    margin-right: 20px;
-    transition: 0.2s;
-}
-
-    .nav-icon:hover, .nav-icon.active {
-        color: var(--f-purple) !important;
-    }
-
-/* --- Kafelki Statystyk --- */
-.stat-card {
-    border-radius: 20px;
-    padding: 25px;
-    color: white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-
-    .stat-card.orange {
-        background-color: var(--f-orange);
-    }
-
-    .stat-card.green {
-        background-color: var(--f-green);
-    }
-
-/* --- Grid i Kafelki KursÛw --- */
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
-}
-
+/* --- KARTY KURS√ìW (DODANE ZAKO≈ÉCZENIE PRZEKRE≈öLENIA) --- */
 .course-card {
     background: #fff;
     border-radius: 20px;
     padding: 25px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
     transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 8px solid transparent;
 }
 
     .course-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
-.exam-badge {
-    background-color: #F3F4F6;
-    color: var(--f-muted);
-    font-size: 0.8rem;
-    padding: 6px 12px;
-    border-radius: 10px;
-    font-weight: 600;
-}
-
-.progress-bg {
-    height: 8px;
-    background: #F3F4F6;
-    border-radius: 4px;
-    margin: 20px 0;
-}
-
-.progress-fill {
-    height: 100%;
-    border-radius: 4px;
-}
-
-/* --- Formularz Dodawania (Create) na PC --- */
-.form-container {
-    max-width: 650px; /* Blokuje rozciπganie inputÛw na ca≥y monitor */
-    margin: 0 auto;
-    background: #fff;
-    padding: 40px;
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-}
-
-.upload-zone {
-    border: 2px dashed var(--f-purple);
-    background-color: #F5F3FF;
-    border-radius: 24px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-    .upload-zone:hover {
-        background-color: #EDE9FE;
-    }
-
-.custom-label {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--f-muted);
-    margin-bottom: 8px;
-    text-transform: uppercase;
-}
-
-.custom-input {
-    border-radius: 12px;
-    border: 1px solid #E5E7EB;
-    padding: 14px 16px;
-    background: #F9FAFB;
-}
-
-/* --- Radio i Przyciski (Komponenty Figmy) --- */
-.color-radio {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.btn-check:checked + .color-radio {
-    border-color: white;
-    box-shadow: 0 0 0 3px var(--f-text);
-}
-
-.priority-group {
-    background: #F3F4F6;
-    border-radius: 16px;
-    padding: 6px;
-}
-
-.priority-btn {
-    border-radius: 12px !important;
-    border: none;
-    color: var(--f-text);
-    font-weight: 600;
-    padding: 10px 0;
-}
-
-.btn-check:checked + .priority-btn.low {
-    background: #E5E7EB;
-}
-
-.btn-check:checked + .priority-btn.med {
-    background: #EAB308;
-    color: white;
-}
-
-.btn-check:checked + .priority-btn.hard {
-    background: #EF4444;
-    color: white;
-}
-
-.btn-purple {
-    background-color: var(--f-purple);
-    color: white;
-    border-radius: 16px;
-    padding: 14px;
-    font-weight: 700;
-    border: none;
-    box-shadow: 0 8px 15px rgba(139, 92, 246, 0.3);
-    transition: 0.2s;
-}
-
-    .btn-purple:hover {
-        background-color: #7C3AED;
-        color: white;
-        transform: translateY(-2px);
-        /* --- Widok SzczegÛ≥Ûw Kursu (Lista tematÛw) --- */
-        .details-wrapper
-
-{
-    max-width: 700px; /* Trzyma listÍ w ryzach na úrodku ekranu PC */
-    margin: 0 auto;
-}
-
+/* --- AKORDEON (SZCZEG√ì≈ÅY KURSU) --- */
 .chapter-card {
-    background: #fff;
-    border-radius: 20px;
-    padding: 20px 25px;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-    border: 1px solid transparent;
+    transition: transform 0.2s;
+    overflow: hidden;
 }
 
-    .chapter-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-        border-color: #F3F4F6;
+    .chapter-card.completed .chapter-title {
+        text-decoration: line-through !important;
+        color: #9CA3AF !important;
     }
 
-.chapter-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-/* KÛ≥ko statusu (puste zielone z Figmy) */
+/* K√≥≈Çko statusu */
 .status-circle {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 2px solid var(--f-green);
-    flex-shrink: 0;
-}
-
-.chapter-title {
-    font-weight: 800;
-    color: var(--f-text);
-    margin: 0;
-    font-size: 1rem;
-}
-
-.chapter-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-/* Ikonka timera */
-.timer-icon {
-    background-color: #F5F3FF; /* Jasny fiolet */
-    color: var(--f-purple);
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
+    width: 26px !important;
+    height: 26px !important;
+    border-radius: 50% !important;
+    border: 2px solid #10B981 !important;
+    cursor: pointer;
+    transition: all 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
 }
 
-.chevron-icon {
-    color: var(--f-muted);
-    font-weight: bold;
-    font-size: 1.2rem;
-}
+    .status-circle.completed {
+        background-color: #10B981 !important;
     }
+
+        .status-circle.completed::after {
+            content: '‚úî' !important;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+/* Obr√≥t strza≈Çki */
+.chevron-icon {
+    transition: transform 0.3s ease;
+}
+
+[aria-expanded="true"] .chevron-icon {
+    transform: rotate(180deg);
+}
+
+/* --- FULLCALENDAR --- */
+.fc {
+    --fc-button-bg-color: #8B5CF6 !important;
+    --fc-today-bg-color: #F5F3FF !important;
+}
+
+.fc-day-today {
+    border: 2px solid #8B5CF6 !important;
+}
+
+/* --- NAVBAR --- */
+.custom-nav-link {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    padding: 15px 20px !important;
+    border-radius: 12px !important;
+    transition: 0.2s;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+    .custom-nav-link:hover {
+        background-color: #F5F3FF !important;
+        color: #8B5CF6 !important;
+    }
+
+.navbar-logo {
+    /* Ustawiamy ma≈ÇƒÖ, bazowƒÖ wysoko≈õƒá, ≈ºeby pasek pozosta≈Ç chudy */
+    height: 45px !important;
+    width: auto;
+    /* MAGIA: Powiƒôkszamy optycznie logo, nie zmieniajƒÖc fizycznego rozmiaru paska */
+    transform: scale(2.5);
+    transform-origin: left center; /* Dziƒôki temu logo nie ucieka w lewo */
+    /* Dodajemy margines po lewej, aby powiƒôkszone logo nie nachodzi≈Ço na krawƒôd≈∫ ekranu */
+    margin-left: 50px;
+}
