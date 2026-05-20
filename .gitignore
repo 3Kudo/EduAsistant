@@ -29,3 +29,11 @@ yarn-error.log*
 
 #MVC
 .vs/
+EduAsistant/.vs/EduAsistant/v17/.suo
+EduAsistant/.vs/EduAsistant/v17/DocumentLayout.json
+EduAsistant/EduAsistant/obj/Debug/net8.0/EduAsistant.AssemblyInfo.cs
+EduAsistant/EduAsistant/obj/Debug/net8.0/EduAsistant.AssemblyInfoInputs.cache
+EduAsistant/EduAsistant/obj/Debug/net8.0/EduAsistant.GeneratedMSBuildEditorConfig.editorconfig
+EduAsistant/EduAsistant/obj/Debug/net8.0/rpswa.dswa.cache.json
+EduAsistant/EduAsistant/obj/project.nuget.cache
+EduAsistant/EduAsistant/obj/Debug/net8.0/EduAsistant.assets.cache
