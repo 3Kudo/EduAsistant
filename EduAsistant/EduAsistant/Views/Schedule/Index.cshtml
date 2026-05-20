@@ -3,8 +3,110 @@
     Layout = "/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container mt-4 mb-5" style="max-width: 1400px;">
+<style>
+    .fc {
+        font-family: inherit;
+        color: #1F2937;
+    }
 
+        .fc .fc-toolbar-title {
+            font-size: 1.8rem !important;
+            font-weight: 800 !important;
+            color: #1F2937;
+        }
+
+        .fc .fc-toolbar-chunk {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .fc .fc-button {
+            border-radius: 12px !important;
+            padding: 10px 18px !important;
+            font-weight: 600 !important;
+            text-transform: capitalize !important;
+            border: none !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
+            transition: all 0.2s ease !important;
+            margin: 0 4px !important;
+        }
+
+        .fc .fc-button-primary {
+            background-color: #F5F3FF !important;
+            color: #8B5CF6 !important;
+        }
+
+            .fc .fc-button-primary:hover {
+                background-color: #8B5CF6 !important;
+                color: #fff !important;
+                box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2) !important;
+                transform: translateY(-1px);
+            }
+
+        .fc .fc-button-active {
+            background-color: #8B5CF6 !important;
+            color: #fff !important;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1) !important;
+        }
+
+    .fc-theme-standard th {
+        border: none !important;
+        padding-bottom: 12px;
+    }
+
+    .fc-col-header-cell-cushion {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #6B7280 !important;
+        font-weight: 700 !important;
+    }
+
+    .fc-theme-standard td, .fc-theme-standard th {
+        border-color: #F3F4F6 !important;
+    }
+
+    .fc-day-today {
+        background-color: #FAFAFA !important;
+    }
+
+    .fc-daygrid-day-number {
+        font-weight: 600 !important;
+        padding: 8px 12px !important;
+        color: #374151 !important;
+    }
+
+    .fc-day-today .fc-daygrid-day-number {
+        background-color: #8B5CF6;
+        color: white !important;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4px auto 0 auto;
+    }
+
+    .fc-event {
+        border-radius: 8px !important;
+        border: none !important;
+        padding: 4px 8px !important;
+        margin: 2px 4px !important;
+        font-weight: 600 !important;
+        font-size: 0.8rem !important;
+        transition: transform 0.2s !important;
+        cursor: pointer !important;
+    }
+
+        .fc-event:hover {
+            transform: translateY(-1px);
+            filter: brightness(1.05);
+        }
+</style>
+
+<div class="container mt-4 mb-5" style="max-width: 1400px;">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h2 class="fw-bolder mb-0">Your Schedule 📅</h2>
@@ -25,31 +127,34 @@
             var calendarEl = document.getElementById('calendar');
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth', // Default view is month
+                initialView: 'dayGridMonth',
                 headerToolbar: {
                     left: 'prev,next today',
                     center: 'title',
                     right: 'dayGridMonth,timeGridWeek,timeGridDay'
                 },
-                firstDay: 1, // Week starts on Monday
-                height: 'auto',
-
-                // Magic: Here the calendar knows where to fetch events from our controller
-                events: '@Url.Action("GetEvents", "Schedule")',
-
-                // --- UI FIXES FOR FIGMA LOOK ---
-                eventDisplay: 'block',     // Forces solid, colored background (pills) instead of dots
-                displayEventTime: false,   // Hides the time (e.g., "13:10"), leaving only the topic name
-                // -------------------------------
-
-                eventTimeFormat: {
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    hour12: false // 24-hour format
+                buttonText: {
+                    today: 'Today',
+                    month: 'Month',
+                    week: 'Week',
+                    day: 'Day'
                 },
+                firstDay: 1,
+                height: 'auto',
+                dayMaxEvents: true,
+                eventDisplay: 'block',
+                displayEventTime: false,
+                events: '@Url.Action("GetEvents", "Schedule")',
                 eventClick: function(info) {
-                    // Alert when clicking on a specific session
-                    alert('Time to study: ' + info.event.title);
+                    alert('Task: ' + info.event.title);
+                },
+                eventDidMount: function(info) {
+                    if (info.event.extendedProps.isCompleted) {
+                        info.el.style.textDecoration = 'line-through';
+                        info.el.style.opacity = '0.5';
+                        info.el.style.backgroundColor = '#E5E7EB';
+                        info.el.style.color = '#6B7280';
+                    }
                 }
             });
 

@@ -68,7 +68,8 @@ namespace EduAsistant.Controllers
         // POST: Subjects/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,ExamDate")] Subject subject, IFormFile? syllabusFile)
+        // DODANO Color oraz DailyStudyLimit do [Bind]!
+        public async Task<IActionResult> Create([Bind("Id,Name,Color,ExamDate,DailyStudyLimit")] Subject subject, IFormFile? syllabusFile)
         {
             var userId = _userManager.GetUserId(User);
             subject.StudentId = userId;
@@ -130,7 +131,7 @@ namespace EduAsistant.Controllers
                                 newSyllabus.Topics.ToList(),
                                 DateTime.Now.AddDays(1),
                                  subject.ExamDate
-                    );
+                            );
                         }
                     }
                     catch (Exception ex)
@@ -142,7 +143,9 @@ namespace EduAsistant.Controllers
                 // 3. Zapis do bazy (Przedmiot + Sylabus + Tematy)
                 _context.Add(subject);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                // ZMIANA: Przekierowanie na stronę główną (Index w HomeController)
+                return RedirectToAction("Index", "Home");
             }
 
             var errors = ModelState.Values.SelectMany(v => v.Errors);

@@ -641,6 +641,18 @@
           }
         }
       },
+      "Ical.Net/5.2.2": {
+        "type": "package",
+        "dependencies": {
+          "NodaTime": "3.2.2"
+        },
+        "compile": {
+          "lib/net8.0/Ical.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Ical.Net.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/8.0.26": {
         "type": "package",
         "compile": {
@@ -2093,6 +2105,19 @@
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "NodaTime/3.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/NodaTime.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/NodaTime.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -3763,6 +3788,24 @@
         "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll",
         "lib/netstandard2.0/zh-Hant/Humanizer.resources.dll",
         "logo.png"
+      ]
+    },
+    "Ical.Net/5.2.2": {
+      "sha512": "UkVwHSOiIwMD7s/GaCsgdxxKAwi5uG+kWmfMJcyB9PotZkXzH4Q3KDMyO1cU9OQH7/p3cvlpdObIxtAl9Zx2tg==",
+      "type": "package",
+      "path": "ical.net/5.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "assets/icon.png",
+        "assets/logo.png",
+        "assets/readme.md",
+        "ical.net.5.2.2.nupkg.sha512",
+        "ical.net.nuspec",
+        "lib/net6.0/Ical.Net.dll",
+        "lib/net8.0/Ical.Net.dll",
+        "lib/netstandard2.0/Ical.Net.dll",
+        "lib/netstandard2.1/Ical.Net.dll"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.26": {
@@ -6678,6 +6721,27 @@
         "packageIcon.png"
       ]
     },
+    "NodaTime/3.2.2": {
+      "sha512": "dmju5W0UYC3QP/UJM0juKAZkH0HSDMp0gH91A0+mT9M0kgyM2Jm67hUZPl/WRQLq8Lijjqmdk8kyAViWFWM7dA==",
+      "type": "package",
+      "path": "nodatime/3.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/NodaTime.dll",
+        "lib/net6.0/NodaTime.pdb",
+        "lib/net6.0/NodaTime.xml",
+        "lib/net8.0/NodaTime.dll",
+        "lib/net8.0/NodaTime.pdb",
+        "lib/net8.0/NodaTime.xml",
+        "lib/netstandard2.0/NodaTime.dll",
+        "lib/netstandard2.0/NodaTime.pdb",
+        "lib/netstandard2.0/NodaTime.xml",
+        "nodatime.3.2.2.nupkg.sha512",
+        "nodatime.nuspec"
+      ]
+    },
     "NuGet.Common/6.11.0": {
       "sha512": "T3bCiKUSx8wdYpcqr6Dbx93zAqFp689ee/oa1tH22XI/xl7EUzQ7No/WlE1FUqvEX1+Mqar3wRNAn2O/yxo94g==",
       "type": "package",
@@ -8232,6 +8296,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Ical.Net >= 5.2.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.26",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.23",
       "Microsoft.EntityFrameworkCore >= 8.0.26",
@@ -8293,6 +8358,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Ical.Net": {
+            "target": "Package",
+            "version": "[5.2.2, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.26, )"

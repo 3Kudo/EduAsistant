@@ -277,18 +277,14 @@ body {
 .chapter-card {
     background: #fff;
     border-radius: 20px;
-    padding: 20px 25px;
     margin-bottom: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* USUNIĘTO: display: flex, align-items: center, justify-content: space-between */
+    display: block; /* To wymusi układ pionowy (jedno pod drugim) */
     transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
     border: 1px solid transparent;
+    overflow: hidden;
 }
-
-
 
     .chapter-card:hover {
         transform: translateY(-3px);
@@ -627,4 +623,33 @@ body {
 
 [data-bs-toggle="collapse"][aria-expanded="true"] .chevron-icon {
     transform: rotate(180deg);
+}
+
+/* =========================================
+   WIDOK MOBILNY (Ekrany do 768px szerokości)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Zmniejszamy logo tylko na telefonach */
+    .landing-logo {
+        height: 70px !important;
+    }
+
+    /* Pasek nawigacji traci marginesy i zaokrąglenia, wypełniając górę telefonu */
+    .custom-navbar {
+        border-radius: 0;
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+
+    /* Karty na telefonie zajmują więcej miejsca, więc zmniejszamy ich wewnętrzny margines (padding) */
+    .course-card, .chapter-card, .stat-card {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    /* Dopasowanie fontów powitalnych */
+    h3.text-white {
+        font-size: 1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
 }
