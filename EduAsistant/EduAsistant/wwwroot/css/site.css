@@ -4,115 +4,652 @@
     --f-green: #10B981;
     --f-text: #1F2937;
     --f-muted: #6B7280;
-    --f-bg: #F8F9FA;
+    --f-bg: #F8F9FA; /* Delikatnie szare tło strony, by białe kafelki z Figmy się odcinały */
 }
+
+
 
 body {
     background-color: var(--f-bg);
     color: var(--f-text);
 }
 
-/* --- LOGO NA EKRANIE POWITALNYM --- */
-.landing-logo {
-    height: 120px !important; /* Rozmiar, który nie rozsadza ekranu */
-    width: auto;
-    display: block;
-    margin: 0 auto 20px auto;
+
+
+/* --- Navbar (Naśladuje pasek nawigacji z Figmy) --- */
+
+.custom-navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 15px 0;
+    margin-bottom: 20px;
 }
 
-/* --- KARTY KURSÓW (DODANE ZAKOŃCZENIE PRZEKREŚLENIA) --- */
+
+
+.navbar-logo {
+    /* 1. Wracamy do bezpiecznej wysokości, żeby pasek znów był chudy */
+
+    height: 70px !important;
+    width: auto;
+    /* 2. MAGIA: Powiększamy logo optycznie o 50% (możesz wpisać 1.8, 2.0 itd., żeby je jeszcze powiększyć) */
+
+    transform: scale(2.5);
+    /* 3. Lekkie odsunięcie, bo powiększone logo może uciekać za bardzo w lewo */
+
+    margin-left: 30px;
+}
+
+
+
+.nav-icon {
+    font-weight: 600;
+    color: #9CA3AF !important;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+
+
+
+    .nav-icon:hover, .nav-icon.active {
+        color: var(--f-purple) !important;
+    }
+
+
+
+/* --- Kafelki Statystyk --- */
+
+.stat-card {
+    border-radius: 20px;
+    padding: 25px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+
+
+    .stat-card.orange {
+        background-color: var(--f-orange);
+    }
+
+
+
+    .stat-card.green {
+        background-color: var(--f-green);
+    }
+
+
+
+/* --- Grid i Kafelki Kursów --- */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+
+
 .course-card {
     background: #fff;
     border-radius: 20px;
     padding: 25px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
     transition: transform 0.2s, box-shadow 0.2s;
-    border-left: 8px solid transparent;
 }
+
+
 
     .course-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.06);
     }
 
-/* --- AKORDEON (SZCZEGÓŁY KURSU) --- */
+
+
+.exam-badge {
+    background-color: #F3F4F6;
+    color: var(--f-muted);
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+
+.progress-bg {
+    height: 8px;
+    background: #F3F4F6;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+
+
+.progress-fill {
+    height: 100%;
+    border-radius: 4px;
+}
+
+
+
+/* --- Formularz Dodawania (Create) na PC --- */
+
+.form-container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+
+
+.upload-zone {
+    border: 2px dashed var(--f-purple);
+    background-color: #F5F3FF;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
+    .upload-zone:hover {
+        background-color: #EDE9FE;
+    }
+
+
+
+.custom-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--f-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+
+
+.custom-input {
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    padding: 14px 16px;
+    background: #F9FAFB;
+}
+
+
+
+/* --- Radio i Przyciski (Komponenty Figmy) --- */
+
+.color-radio {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+
+.btn-check:checked + .color-radio {
+    border-color: white;
+    box-shadow: 0 0 0 3px var(--f-text);
+}
+
+
+
+.priority-group {
+    background: #F3F4F6;
+    border-radius: 16px;
+    padding: 6px;
+}
+
+
+
+.priority-btn {
+    border-radius: 12px !important;
+    border: none;
+    color: var(--f-text);
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+
+
+.btn-check:checked + .priority-btn.low {
+    background: #E5E7EB;
+}
+
+
+
+.btn-check:checked + .priority-btn.med {
+    background: #EAB308;
+    color: white;
+}
+
+
+
+.btn-check:checked + .priority-btn.hard {
+    background: #EF4444;
+    color: white;
+}
+
+
+
+.btn-purple {
+    background-color: var(--f-purple);
+    color: white;
+    border-radius: 16px;
+    padding: 14px;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 8px 15px rgba(139, 92, 246, 0.3);
+    transition: 0.2s;
+}
+
+
+
+    /* TUTAJ BYŁ BŁĄD SKŁADNIOWY W TWOIM KODZIE - ZAMKNĄŁEM KLAMRĘ */
+
+    .btn-purple:hover {
+        background-color: #7C3AED;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+
+
+/* --- Widok Szczegółów Kursu (Lista tematów) --- */
+
+.details-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
 .chapter-card {
-    transition: transform 0.2s;
+    background: #fff;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    /* USUNIĘTO: display: flex, align-items: center, justify-content: space-between */
+    display: block; /* To wymusi układ pionowy (jedno pod drugim) */
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid transparent;
     overflow: hidden;
 }
 
-    .chapter-card.completed .chapter-title {
-        text-decoration: line-through !important;
-        color: #9CA3AF !important;
+    .chapter-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        border-color: #F3F4F6;
     }
 
-/* Kółko statusu */
+
+
+.chapter-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
 .status-circle {
-    width: 26px !important;
-    height: 26px !important;
-    border-radius: 50% !important;
-    border: 2px solid #10B981 !important;
-    cursor: pointer;
-    transition: all 0.3s;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid var(--f-green);
+    flex-shrink: 0;
+}
+
+
+
+.chapter-title {
+    font-weight: 800;
+    color: var(--f-text);
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+
+.chapter-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.timer-icon {
+    background-color: #F5F3FF;
+    color: var(--f-purple);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
 }
 
-    .status-circle.completed {
-        background-color: #10B981 !important;
-    }
 
-        .status-circle.completed::after {
-            content: '✔' !important;
-            color: white;
-            font-size: 14px;
-            font-weight: bold;
-        }
 
-/* Obrót strzałki */
 .chevron-icon {
-    transition: transform 0.3s ease;
+    color: var(--f-muted);
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-[aria-expanded="true"] .chevron-icon {
-    transform: rotate(180deg);
-}
 
-/* --- FULLCALENDAR --- */
+
+/* =========================================
+
+   FULLCALENDAR - STYLIZACJA Z FIGMY (Poprawiona)
+
+   ========================================= */
+
+
+
 .fc {
     --fc-button-bg-color: #8B5CF6 !important;
+    --fc-button-border-color: #8B5CF6 !important;
+    --fc-button-hover-bg-color: #7C3AED !important;
+    --fc-button-hover-border-color: #7C3AED !important;
+    --fc-button-active-bg-color: #6D28D9 !important;
+    --fc-button-active-border-color: #6D28D9 !important;
+    /* Delikatne tło dla dzisiejszego dnia */
+
     --fc-today-bg-color: #F5F3FF !important;
+    --fc-border-color: #E5E7EB !important;
 }
+
+
+
+/* --- MOCNE PODŚWIETLENIE OBECNEGO DNIA --- */
 
 .fc-day-today {
-    border: 2px solid #8B5CF6 !important;
+    /* Gruba fioletowa ramka wokół całego dnia */
+
+    border: 3px solid #8B5CF6 !important;
+    box-shadow: inset 0 0 15px rgba(139, 92, 246, 0.1) !important;
 }
 
-/* --- NAVBAR --- */
-.custom-nav-link {
-    font-size: 1.1rem !important;
-    font-weight: 700 !important;
-    padding: 15px 20px !important;
+
+
+    /* Fioletowe kółko wokół numeru dzisiejszego dnia */
+
+    .fc-day-today .fc-daygrid-day-number {
+        background-color: #8B5CF6 !important;
+        color: white !important;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: 4px;
+        font-weight: bold !important;
+    }
+
+/* ----------------------------------------- */
+
+
+
+
+
+.fc .fc-button-primary {
     border-radius: 12px !important;
-    transition: 0.2s;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    padding: 8px 16px !important;
+    box-shadow: 0 4px 10px rgba(139, 92, 246, 0.25) !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+
+
+.fc-col-header-cell-cushion,
+.fc-daygrid-day-number {
+    color: #4B5563 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+
+
+.fc-col-header-cell-cushion {
+    padding: 12px 0 !important;
+}
+
+
+
+.fc .fc-toolbar-title {
+    font-weight: 800 !important;
+    color: #1F2937 !important;
+    font-size: 1.75rem !important;
+}
+
+
+
+/* --- WYGLĄD PIGUŁEK TEMATÓW (Z ciemnym tekstem) --- */
+
+.fc-daygrid-event {
+    border-radius: 8px !important;
+    padding: 5px 10px !important;
+    margin-top: 3px !important;
+    border: none !important;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    /* ZMIANA: Ciemny tekst zamiast białego */
+
+    color: #1F2937 !important;
+    /* DODATEK: Lekki jasny cień pod tekstem dla czytelności na ciemnym tle pigułki */
+
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+    cursor: pointer !important;
+    transition: transform 0.2s !important;
+}
+
+
+
+    .fc-daygrid-event:hover {
+        transform: translateY(-2px) !important;
+        filter: brightness(1.05);
+    }
+
+
+
+.fc-daygrid-event-dot {
+    display: none !important;
+}
+
+
+
+/* =========================================
+
+   NAVBAR - EFEKTY HOVER (FIGMA STYLE)
+
+   ========================================= */
+
+
+
+/* =========================================
+
+   NAVBAR - POTĘŻNE PRZYCISKI (WYPEŁNIAJĄCE WYSOKOŚĆ)
+
+   ========================================= */
+
+
+
+.custom-nav-link {
+    /* 1. BOOST FONT SIZE - Napisy są teraz duże i wyraźne */
+
+    font-size: 1.4rem !important;
+    font-weight: 800 !important; /* Ekstra gruby tekst dla lepszej widoczności */
+    /* 2. MAKSYMALNY PADDING PIONOWY - Rozpycha przycisk na pełną wysokość */
+    /* padding: góra dół lewo prawo */
+
+    padding: 25px 35px !important; /* Ekstra dużo miejsca w środku */
+    /* 3. KOREKTA ZAOKRĄGLEŃ - Przy tej wysokości mniejsze zaokrąglenie wygląda lepiej */
+
+    border-radius: 12px !important;
+    transition: all 0.2s ease-in-out !important;
     display: flex !important;
     align-items: center !important;
-    gap: 10px !important;
+    gap: 12px !important;
 }
+
+
+
+    /* Zachowanie po najechaniu (Hover) - bez zmian, po prostu na większej powierzchni */
 
     .custom-nav-link:hover {
         background-color: #F5F3FF !important;
         color: #8B5CF6 !important;
     }
 
-.navbar-logo {
-    /* Ustawiamy małą, bazową wysokość, żeby pasek pozostał chudy */
-    height: 45px !important;
+
+
+/* Animacja ikonek (emoji) - zwiększamy skalę, żeby pasowały do dużego tekstu */
+
+.nav-icon-emoji {
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+    font-size: 1.6rem; /* Większe emoji */
+}
+
+
+
+/* Lekkie powiększenie (podskoczenie) ikonki przy hoverze */
+
+.custom-nav-link:hover .nav-icon-emoji {
+    transform: scale(1.2) translateY(-2px);
+}
+
+
+
+/* =========================================
+
+   KÓŁKO STATUSU - ZAAWANSOWANE
+
+   ========================================= */
+
+
+
+.status-circle {
+    width: 26px !important;
+    height: 26px !important;
+    border-radius: 50% !important;
+    border: 2px solid #10B981 !important; /* Sztywny zielony kolor */
+
+    flex-shrink: 0 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: transparent !important;
+}
+
+
+
+    /* Stan ZAKOŃCZONY - Wypełnione na zielono */
+
+    .status-circle.completed {
+        background-color: #10B981 !important; /* Sztywne zielone tło */
+
+        border-color: #10B981 !important;
+    }
+
+
+
+        /* Ptaszek (checkmark) w środku */
+
+        .status-circle.completed::after {
+            content: '✔' !important;
+            color: white !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+        }
+
+
+
+/* Przekreślenie zrobionego tematu */
+
+.chapter-card.completed .chapter-title {
+    text-decoration: line-through !important;
+    color: #9CA3AF !important;
+    transition: all 0.3s ease !important;
+}
+
+
+
+/* --- BIAŁE LOGO NA EKRANIE POWITALNYM (ZMNIEJSZONE) --- */
+
+.landing-logo {
+    height: 200px !important; /* Zmniejszyliśmy z 120px */
+
     width: auto;
-    /* MAGIA: Powiększamy optycznie logo, nie zmieniając fizycznego rozmiaru paska */
-    transform: scale(2.5);
-    transform-origin: left center; /* Dzięki temu logo nie ucieka w lewo */
-    /* Dodajemy margines po lewej, aby powiększone logo nie nachodziło na krawędź ekranu */
-    margin-left: 50px;
+    scale: 2;
+    /* Usunęliśmy transform: scale(), który robił z tego giganta */
+
+
+
+    margin-bottom: 20px;
+}
+
+
+
+/* --- ANIMACJA STRZAŁKI W AKORDEONIE KURSÓW --- */
+
+.chevron-icon {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Płynny obrót */
+}
+
+
+
+/* Kiedy karta jest rozwinięta, obróć strzałkę o 180 stopni */
+
+[data-bs-toggle="collapse"][aria-expanded="true"] .chevron-icon {
+    transform: rotate(180deg);
+}
+
+/* =========================================
+   WIDOK MOBILNY (Ekrany do 768px szerokości)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Zmniejszamy logo tylko na telefonach */
+    .landing-logo {
+        height: 70px !important;
+    }
+
+    /* Pasek nawigacji traci marginesy i zaokrąglenia, wypełniając górę telefonu */
+    .custom-navbar {
+        border-radius: 0;
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+
+    /* Karty na telefonie zajmują więcej miejsca, więc zmniejszamy ich wewnętrzny margines (padding) */
+    .course-card, .chapter-card, .stat-card {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    /* Dopasowanie fontów powitalnych */
+    h3.text-white {
+        font-size: 1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
 }
